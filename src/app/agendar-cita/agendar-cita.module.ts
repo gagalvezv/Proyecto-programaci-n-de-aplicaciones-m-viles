@@ -4,12 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPageRoutingModule } from './login-routing.module';
+import { AgendarCitaPageRoutingModule } from './agendar-cita-routing.module';
 
-import { LoginPage } from './login.page';
-import {MatTabsModule} from '@angular/material/tabs';
-
-
+import { AgendarCitaPage } from './agendar-cita.page';
 
 
 
@@ -18,9 +15,9 @@ import {MatTabsModule} from '@angular/material/tabs';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule,
-    MatTabsModule
+    AgendarCitaPageRoutingModule,
+    
   ],
-  declarations: [LoginPage]
+  declarations: [AgendarCitaPage]
 })
-export class LoginPageModule {}
+export class AgendarCitaPageModule {}

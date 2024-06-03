@@ -17,6 +17,21 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'agendar-cita',
+    loadChildren: () => import('./agendar-cita/agendar-cita.module').then( m => m.AgendarCitaPageModule)
+  },
+  {
+    path: 'agendar-cita-doctor',
+    loadChildren: () => import('./agendar-cita-doctor/agendar-cita-doctor.module').then( m => m.AgendarCitaDoctorPageModule)
+  },
+
+
+  
 ];
 
 @NgModule({

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="home"></ion-icon><ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-col>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seleccione una opción:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img [routerLink]="['/agendar-cita']" alt="Silhouette of mountains" src="../../assets/img/citas.png" />
+          </ion-thumbnail>
+          <ion-label [routerLink]="['/agendar-cita']">Agendar cita</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../assets/img/citas2.png" />
+          </ion-thumbnail>
+          <ion-label>Mis citas</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../assets/img/citas3.png" />
+          </ion-thumbnail>
+          <ion-label>Telemedicina</ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../assets/img/citas4.png" />
+          </ion-thumbnail>
+          <ion-label>Emergencias</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-col>
+
