@@ -29,6 +29,10 @@ const routes: Routes = [
     path: 'agendar-cita-doctor',
     loadChildren: () => import('./agendar-cita-doctor/agendar-cita-doctor.module').then( m => m.AgendarCitaDoctorPageModule)
   },
+  {
+    path: 'mis-citas',
+    loadChildren: () => import('./mis-citas/mis-citas.module').then( m => m.MisCitasPageModule)
+  },
 
 
   
