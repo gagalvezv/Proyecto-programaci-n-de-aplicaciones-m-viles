@@ -9,21 +9,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-list>
-    <ion-item>
-      <ion-label>Dr. ejemplo1</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Dr. ejemplo2</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Dr. ejemplo3</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Dr. ejemplo4</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Dr. ejemplo5</ion-label>
-    </ion-item>
+    <div *ngIf="ListaMedicos">
+      <ion-item *ngFor="let medicos of ListaMedicos">
+        <img style="border-radius: 100px; padding: 5px; width: 17%" alt="Imagen doctor" src= {{medicos.picture.medium}}/>
+        <ion-label style="margin-left: 10px;">Dr. {{ medicos.name.first }}</ion-label>
+      </ion-item>
+    </div>
   </ion-list>
 
   <ion-button [routerLink]="['/home']">Guardar cita</ion-button>

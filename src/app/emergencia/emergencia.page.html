@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Agenda tu cita</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-col>
+  <div class="locacion" *ngIf="latitud && longitud">
+    <h2>Tu ubicación actual</h2>
+    <p>Latitud: {{ latitud }}</p>
+    <p>Longitud: {{ longitud }}</p>
+  </div>
+  <div *ngIf="!latitud && !longitud">
+    <p>Obteniendo tu ubicación...</p>
+  </div>
+</ion-col>
+
+<ion-col class="boton-emergencia">
+<ion-button [routerLink]="['/home']">Solicitar ambulancia</ion-button>
+</ion-col>

@@ -32,12 +32,13 @@
           <ion-label>Telemedicina</ion-label>
         </ion-item>
 
-        <ion-item lines="none">
+        <ion-item>
           <ion-thumbnail slot="start">
-            <img alt="Silhouette of mountains" src="../../assets/img/citas4.png" />
+            <img [routerLink]="['/emergencia']" alt="Silhouette of mountains" src="../../assets/img/citas4.png" />
           </ion-thumbnail>
-          <ion-label>Emergencias</ion-label>
+          <ion-label [routerLink]="['/emergencia']">Emergencia</ion-label>
         </ion-item>
+        
       </ion-list>
     </ion-card-content>
   </ion-card>
