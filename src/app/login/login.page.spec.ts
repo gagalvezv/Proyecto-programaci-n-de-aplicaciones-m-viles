@@ -11,7 +11,9 @@ describe('LoginPage', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('Verifica que se renderizo el login', () => {
+    const fixture = TestBed.createComponent(LoginPage);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
   });
 });

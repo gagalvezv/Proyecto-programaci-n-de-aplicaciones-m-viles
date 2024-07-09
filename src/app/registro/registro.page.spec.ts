@@ -11,7 +11,7 @@ describe('RegistroPage', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('sDeberia visualizar el componente', () => {
     expect(component).toBeTruthy();
   });
 });

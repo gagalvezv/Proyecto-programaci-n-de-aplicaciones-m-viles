@@ -3,6 +3,10 @@
 
 module.exports = function (config) {
   config.set({
+    // ... otras configuraciones
+    browserDisconnectTimeout: 10000,  // Tiempo de espera para desconexión del navegador (default: 2000ms)
+    browserDisconnectTolerance: 3,    // Número de intentos de reconexión (default: 0)
+    browserNoActivityTimeout: 30000,  // Tiempo de espera sin actividad del navegador (default: 10000ms)
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [

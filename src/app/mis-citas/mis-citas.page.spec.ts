@@ -11,7 +11,7 @@ describe('MisCitasPage', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Deberia visualizar el componente', () => {
     expect(component).toBeTruthy();
   });
 });

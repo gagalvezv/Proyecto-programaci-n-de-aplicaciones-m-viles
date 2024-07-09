@@ -11,7 +11,7 @@ describe('EmergenciaPage', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Deberia visualizar componente', () => {
     expect(component).toBeTruthy();
   });
 });
